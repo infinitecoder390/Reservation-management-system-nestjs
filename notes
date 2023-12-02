@@ -1,0 +1,63 @@
+Install Nest Cli Globally with cmd -
+
+npm i -g @nestjs/Cli
+
+create a new project with nestjs
+
+nest new [Project-name]
+
+After installation of Project run cmd -
+
+npm run start
+
+Then Your http://localhost:3000 port and url working now
+
+Test with postman you will get "hello world" in response
+
+================================================================================
+
+We are going to create common packages and libraries example db access, authentication and logging etc.
+
+create and generate common library for it using cmd-
+
+nest generate library common
+
+================================================================================
+
+Install Mongodb with cmd -
+
+npm i @nestjs/mongoose mongoose
+
+npm i @nestjs/config
+
+Implement Database module inside common module
+
+nest generate module database -p common
+
+Implement config module inside common module
+
+nest generate module config -p common
+
+=============================================================================
+
+nest generate a reservations services inside app
+
+nest g app reservations
+
+=============================================================================
+
+============================ Authentication ===========================
+
+nest g app auth
+
+create a module to use in authentication
+
+nest g module users
+
+nest g controller users
+
+nest g service users
+
+create users model then update docker-compose file and Dockerfile
+
+================================================================
