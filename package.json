@@ -13,6 +13,8 @@
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/apps/reservation-management-system/main",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "postinstall": "husky install",
+    "prelint": "tsc --noemit",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
