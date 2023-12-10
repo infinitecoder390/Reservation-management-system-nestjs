@@ -10,6 +10,7 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
+    "strict":true,
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": false,
@@ -24,6 +25,12 @@
       "@app/common/*": [
         "libs/common/src/*"
       ]
-    }
+    },
+    "include": [
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+    "./src/**/*.js",
+    "./src/**/*.jsx",
+  ]
   }
 }
