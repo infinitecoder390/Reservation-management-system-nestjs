@@ -11,7 +11,6 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe({ whitelist: true }));
   app.useLogger(app.get(Logger));
   const configService = app.get(ConfigService);
-  console.log("Hello")
   await app.listen(configService.get('PORT'));
 }
 bootstrap();
